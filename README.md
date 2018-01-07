@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Running cypress tests
 
-Run 'npm run cypress:open' to run cypress interface and run tests. [Cypress](https://www.cypress.io/).
+Run `npm run cypress:open` to run cypress interface and run tests. [Cypress](https://www.cypress.io/).
 
 ## Further help
 
