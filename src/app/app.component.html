@@ -1,5 +1,48 @@
-<button class="btn btn-primary">Test Button</button>
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar__brand" href="#">CC</a>
+    
+  <!-- Links -->
+  <ul class="navbar-nav navbar__place navbar">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
+<!-- /.navbar-->
 
-<h1>
-  {{title}} <i class="fa fa-facebook-square" aria-hidden="true"></i>
-</h1>
+<app-home-component></app-home-component>
+<app-portfolio-component></app-portfolio-component>
+<app-contact-component></app-contact-component>
+
+<!--Footer-->
+<footer class="page-footer">
+
+  <!--Social buttons-->
+  <div class="page-footer__socialButton">
+      <a class="btn-floating btn-small btn-tw waves-light" mdbRippleRadius><i class="fa fa-twitter-square fa-2x" aria-hidden="true"> </i></a>
+      <a class="btn-floating btn-small btn-gplus waves-light" mdbRippleRadius><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"> </i></a>
+      <a class="btn-floating btn-small btn-li waves-light" mdbRippleRadius><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"> </i></a>
+      <a class="btn-floating btn-small btn-git waves-light" mdbRippleRadius><i class="fa fa-github-square fa-2x" aria-hidden="true"> </i></a>
+  </div>
+  <!--/.Social buttons-->
+
+  <hr>
+
+  <!--Copyright-->
+  <div class="page-footer__copyright">
+      <div class="container-fluid">
+          © 2018 Copyright: Michael Beaseley 
+      </div>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
