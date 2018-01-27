@@ -1,61 +1,65 @@
-<header class=page__header>
-    <nav class="navbar navbar-inverse navbar-expand-md justify-content-center">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="collapsingNavbar3">
-            <ul class="navbar-nav mx-auto w-100 justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<div class="page justify-content-center">
+    <!-- header -->
+    <header class="page__header">
+        <nav class="navbar navbar-inverse navbar-static-top navbar-expand-sm">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbar3">
+                <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- /.header -->
 
-<!-- body -->
-<div class="page__body justify-content-center">
-    <app-home-component></app-home-component>
-    <app-portfolio-component></app-portfolio-component>
-    <app-contact-component></app-contact-component>
+    <!-- body -->
+    <div class="page__body">
+        <app-home-component></app-home-component>
+        <app-portfolio-component></app-portfolio-component>
+        <app-contact-component></app-contact-component>
+    </div>
+    <!-- /.body -->
+
+    <!--Footer-->
+    <footer class="page__footer">
+
+        <!--Social buttons-->
+        <div class="page__footer__socialButton">
+            <a class="btn-floating btn-small btn-tw waves-light" href="https://twitter.com/MTBeaseley" mdbRippleRadius>
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"> </i>
+            </a>
+            <a class="btn-floating btn-small btn-gplus waves-light"href="https://plus.google.com/117738588364741731293" mdbRippleRadius>
+                <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="btn-floating btn-small btn-li waves-light" href="https://www.linkedin.com/in/michael-beaseley-817b5a101" mdbRippleRadius>
+                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="btn-floating btn-small btn-git waves-light" href="https://github.com/mbeaseley" mdbRippleRadius>
+                <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+        <!--/.Social buttons-->
+
+        <hr>
+
+        <!--Copyright-->
+        <div class="page__footer__copyright">
+            <div class="container-fluid">
+                © 2018 Copyright: Michael Beaseley 
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
 </div>
-<!-- /.body -->
-
-<!--Footer-->
-<footer class="page__footer">
-
-  <!--Social buttons-->
-    <div class="page__footer__socialButton">
-        <a class="btn-floating btn-small btn-tw waves-light" href="https://twitter.com/MTBeaseley" mdbRippleRadius>
-            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"> </i>
-        </a>
-        <a class="btn-floating btn-small btn-gplus waves-light"href="https://plus.google.com/117738588364741731293" mdbRippleRadius>
-            <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
-        </a>
-        <a class="btn-floating btn-small btn-li waves-light" href="https://www.linkedin.com/in/michael-beaseley-817b5a101" mdbRippleRadius>
-            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-        </a>
-        <a class="btn-floating btn-small btn-git waves-light" href="https://github.com/mbeaseley" mdbRippleRadius>
-            <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
-        </a>
-    </div>
-  <!--/.Social buttons-->
-
-    <hr>
-
-  <!--Copyright-->
-    <div class="page__footer__copyright">
-        <div class="container-fluid">
-            © 2018 Copyright: Michael Beaseley 
-        </div>
-    </div>
-  <!--/.Copyright-->
-
-</footer>
-<!--/.Footer-->
