@@ -1,49 +1,50 @@
 .page {
-    //page sections below
-    &__header {
-        height: 60px;
+    &__left {
+        position: absolute; 
+        left: 0; 
+        width: 50%;
 
-        .navbar { 
-            padding:  0.5rem 0;
-            cursor: pointer;
+        //page sections below
+        &--header {
+            height: 60px;
 
-            .active > .nav-link {
-                color: #80E3FF;
+            .navbar { 
+                padding:  0.5rem 0;
+                cursor: pointer;
+
+                .active > .nav-link {
+                    color: #80E3FF;
+                }
+
+                .nav-link {
+                    color: #b4b4b4;
+                }
+
+                .nav-link:hover {
+                    color: white;
+                }
             }
+        }
 
-            .nav-link {
-                color: rgb(231, 231, 231);
-            }
-
-            .nav-link:hover {
-                color: white;
-            }
+        &--body {
+            height: 100%;
         }
     }
 
-    &__body {
-        height: 100%;
-        margin-bottom: 100px;
-        padding: 10px 80px 10px 80px;
-
-        app-home-component {
-            margin-bottom: 1rem;
-        }
-
-        app-portfolio-component { 
-            margin-bottom: 1rem;
-        }
-
-        app-contact-component {
-            margin-bottom: 1rem;
-        }
+    &__right {
+        position: absolute; 
+        right: 0; 
+        width: 50%;
+        height:100%;
+        background-color: #b4b4b4;
     }
 
     &__footer {
-        height: 100px;
         position: absolute;
         bottom: 0;
         width: 100%;
+        background-color: rgb(37, 37, 37);
+        padding: 1rem 0 1rem 0;
 
         &__socialButton {
             text-align: center;
