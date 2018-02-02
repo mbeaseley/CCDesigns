@@ -1,24 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { HomeComponentComponent } from './home-component/home-component.component';
-import { PortfolioComponentComponent } from './portfolio-component/portfolio-component.component';
-import { ContactComponentComponent } from './contact-component/contact-component.component';
 
+import { HomeComponent } from './home-component/home-component.component';
+import { PortfolioComponent } from './portfolio-component/portfolio-component.component';
+import { ContactComponent } from './contact-component/contact-component.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'contact', component: ContactComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponentComponent,
-    PortfolioComponentComponent,
-    ContactComponentComponent
+    HomeComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
