@@ -1,16 +1,18 @@
 .page {
     //page sections below
     &--header {
-        position: absolute;
+        position: fixed;
         width: 100vw;
+        z-index: 1;
 
-        .navbar { 
+        .navbar {
+            position: relative;
             padding:  0.5rem 1rem;
             margin-left: 80px;
             cursor: pointer;
 
             @media (max-width:992px) {
-                margin-left: 0; 
+                margin-left: 0;
             }
 
             .nav-link {
@@ -27,7 +29,9 @@
         }
 
         @media screen and (max-width: 768px) {
-            position: relative;
+            position: absolute;
+            z-index: 1;
+            background-color: black;
         }
     }
 
@@ -55,10 +59,10 @@
         }
 
         &__socialContainer {
-            position: absolute;
-            top: 75px;
+            position: fixed;
             width: 100vw;
-            height: 70vh;
+            height: 100vh;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -91,31 +95,7 @@
 
             @media screen and (max-width: 768px) {
                 flex-direction: row;
-                top: 100px;
-
-                // .socialContrainerMove {
-                //     animation-name: socialContrainerMove;
-                //     animation-duration: 1s;
-                //     animation-fill-mode: both;
-            
-                //     @keyframes socialContrainerMove {
-                //         to {
-                //             top: 220px;
-                //         }
-                //     }
-                // }
-
-                // .socialContrainerMoveBack {
-                //     animation-name: socialContrainerMove;
-                //     animation-duration: 1s;
-                //     animation-fill-mode: both;
-
-                //     @keyframes socialContrainerMove {
-                //         to {
-                //             top: 100px;
-                //         }
-                //     }
-                // }
+                top: -50px;
 
                 .circle {
                     margin-right: 20px;
@@ -124,6 +104,8 @@
         }
 
         @media screen and (max-width: 768px) {
+            position: relative;
+            top: 56px;
             -webkit-flex-direction: column;
             flex-direction: column;
 

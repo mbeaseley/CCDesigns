@@ -3,25 +3,25 @@
     <!-- header -->
     <header class="page--header">
         <nav class="navbar navbar-inverse navbar-static-top navbar-expand-md">
-            <button class="navbar-toggler" type="button" (click)= "myMethod()" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="collapsingNavbar3">
                 <ul class="navbar-nav mx-auto w-100">
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="/home" 
-                            [routerLinkActive]="['']" 
-                            [ngClass]="rla.isActive?'active':''" 
+                        <a class="nav-link" routerLink="/home"
+                            [routerLinkActive]="['']"
+                            [ngClass]="rla.isActive?'active':''"
                             #rla="routerLinkActive">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" 
-                            routerLink="/portfolio" 
+                        <a class="nav-link"
+                            routerLink="/portfolio"
                             routerLinkActive="active">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  
-                            routerLink="/contact"  
+                        <a class="nav-link"
+                            routerLink="/contact"
                             routerLinkActive="active">Contact</a>
                     </li>
                 </ul>
@@ -43,7 +43,7 @@
         <!-- right contrainer -->
         <div class="page-body__right">
             <div class="page-body__right--body">
-                
+
             </div>
         </div>
 
@@ -81,7 +81,7 @@
 
     <footer class="page__footer">
         <div class="page__footer__copyright">
-            © 2018 Copyright: Michael Beaseley 
+            © 2018 Copyright: Michael Beaseley
         </div>
     </footer>
 
