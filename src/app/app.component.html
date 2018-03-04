@@ -3,86 +3,89 @@
     <!-- header -->
     <header class="page--header">
         <nav class="navbar navbar-inverse navbar-static-top navbar-expand-md">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="collapsingNavbar3">
-                <ul class="navbar-nav mx-auto w-100">
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="/home"
-                            [routerLinkActive]="['']"
-                            [ngClass]="rla.isActive?'active':''"
-                            #rla="routerLinkActive">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            routerLink="/portfolio"
-                            routerLinkActive="active">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            routerLink="/contact"
-                            routerLinkActive="active">Contact</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand">
+              <img src="../assets/favicon.png" height="40" alt="CCDesigns">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="collapsingNavbar3">
+              <ul class="navbar-nav mx-auto w-100">
+                  <li class="nav-item">
+                      <a class="nav-link" routerLink="/home"
+                          [routerLinkActive]="['']"
+                          [ngClass]="rla.isActive?'active':''"
+                          #rla="routerLinkActive">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link"
+                          routerLink="/portfolio"
+                          routerLinkActive="active">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link"
+                          routerLink="/contact"
+                          routerLinkActive="active">Contact</a>
+                  </li>
+              </ul>
+          </div>
         </nav>
     </header>
     <!-- /.header -->
 
     <div class="page-body">
-        <!-- left contrainer -->
-        <div class="page-body__left">
-            <!-- body -->
-            <div class="page-body__left--body">
-                <router-outlet></router-outlet>
-            </div>
-            <!-- /.body -->
+      <!-- left contrainer -->
+      <div class="page-body__left">
+        <!-- body -->
+        <div class="page-body__left--body">
+            <router-outlet></router-outlet>
         </div>
+        <!-- /.body -->
+      </div>
 
-        <!-- right contrainer -->
-        <div class="page-body__right">
-            <div class="page-body__right--body">
+      <!-- right contrainer -->
+      <div class="page-body__right">
+        <div class="page-body__right--body">
 
-            </div>
         </div>
+      </div>
 
-        <div id="socialContrainer" class="page-body__socialContainer">
-            <div class="circle circle--outercircle">
-                <div class="circle circle--innercircle">
-                    <a class="btn-floating btn-small btn-tw waves-light" href="https://twitter.com/MTBeaseley" mdbRippleRadius>
-                        <i class="fa fa-twitter fa-3x" aria-hidden="true"> </i>
-                    </a>
-                </div>
-            </div>
-            <div class="circle circle--outercircle">
-                <div class="circle circle--innercircle">
-                    <a class="btn-floating btn-small btn-gplus waves-light"href="https://plus.google.com/117738588364741731293" mdbRippleRadius>
-                        <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="circle circle--outercircle">
-                <div class="circle circle--innercircle">
-                    <a class="btn-floating btn-small btn-li waves-light" href="https://www.linkedin.com/in/michael-beaseley-817b5a101" mdbRippleRadius>
-                        <i class="fa fa-facebook-f fa-2x" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="circle circle--outercircle">
-                <div class="circle circle--innercircle">
-                    <a class="btn-floating btn-small btn-git waves-light" href="https://github.com/mbeaseley" mdbRippleRadius>
-                        <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-                    </a>
-                </div>
+      <div id="socialContrainer" class="page-body__socialContainer">
+        <div class="circle circle--outercircle">
+            <div class="circle circle--innercircle">
+                <a class="btn-floating btn-small btn-li waves-light" href="https://www.linkedin.com/in/michael-beaseley-817b5a101" mdbRippleRadius>
+                  <i class="fa fa-linkedin fa-2x"></i>
+                </a>
             </div>
         </div>
+        <div class="circle circle--outercircle">
+            <div class="circle circle--innercircle">
+                <a class="btn-floating btn-small btn-tw waves-light" href="https://twitter.com/MTBeaseley" mdbRippleRadius>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"> </i>
+                </a>
+            </div>
+        </div>
+        <div class="circle circle--outercircle">
+            <div class="circle circle--innercircle">
+                <a class="btn-floating btn-small btn-git waves-light" href="https://github.com/mbeaseley" mdbRippleRadius>
+                    <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="circle circle--outercircle">
+            <div class="circle circle--innercircle">
+                <a class="btn-floating btn-small btn-gplus waves-light"href="https://plus.google.com/117738588364741731293" mdbRippleRadius>
+                    <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+      </div>
     </div>
 
     <footer class="page__footer">
-        <div class="page__footer__copyright">
-            © 2018 Copyright: Michael Beaseley
-        </div>
+      <div class="page__footer__copyright">
+          © 2018 Copyright: Michael Beaseley
+      </div>
     </footer>
 
 </div>

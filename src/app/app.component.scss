@@ -7,7 +7,7 @@
 
         .navbar {
             position: relative;
-            padding:  0.5rem 1rem;
+            padding:  0.5rem 1rem 0.75rem;
             margin-left: 80px;
             cursor: pointer;
 
@@ -17,6 +17,7 @@
 
             .nav-link {
                 color: #b4b4b4;
+
             }
 
             .active {
@@ -32,6 +33,16 @@
             position: absolute;
             z-index: 1;
             background-color: black;
+            text-align: center;
+
+            img {
+              position: absolute;
+            }
+
+            .nav-link {
+              position: relative;
+              left: 8px;
+            }
         }
     }
 
@@ -41,7 +52,7 @@
         -webkit-flex-direction: row;
         flex-direction: row;
         width: 100vw;
-        height: 97vh;
+        height: auto;
 
         &__left {
             padding: 60px 0 10px 0;
@@ -52,6 +63,7 @@
 
         &__right {
             background-color: #b4b4b4;
+            height:97vh;
             flex: 2 2 50vw;
             order: 2;
             background:url('http://via.placeholder.com/350x150') repeat center top;
@@ -95,7 +107,7 @@
 
             @media screen and (max-width: 768px) {
                 flex-direction: row;
-                top: -50px;
+                top: -75px;
 
                 .circle {
                     margin-right: 20px;
@@ -116,7 +128,7 @@
             &__right {
                 order: 1;
                 min-height: 35vh;
-                max-height: 38vh;
+                max-height: 35vh;
             }
         }
     }
