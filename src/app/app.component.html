@@ -1,55 +1,95 @@
-<div class=page__header>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-sm navbar-dark">
+<div class="page justify-content-center">
 
-    <!-- Brand/logo -->
-    <a class="navbar__brand" href="#">CC</a>
-  
-    <!-- Links -->
-    <ul class="navbar-nav navbar__place navbar">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-  </nav>
-<!-- /.navbar-->
-</div>
+    <!-- header -->
+    <header class="page--header">
+        <nav class="navbar navbar-inverse navbar-static-top navbar-expand-md">
+          <a class="navbar-brand">
+              <img src="../assets/favicon.png" height="40" alt="CCDesigns">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="collapsingNavbar3">
+              <ul class="navbar-nav mx-auto w-100">
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/home"
+                        [routerLinkActive]="['']"
+                        [ngClass]="rla.isActive?'active':''"
+                        #rla="routerLinkActive">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"
+                        routerLink="/portfolio"
+                        routerLinkActive="active">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"
+                        routerLink="/contact"
+                        routerLinkActive="active">Contact</a>
+                  </li>
+              </ul>
+          </div>
+        </nav>
+    </header>
+    <!-- /.header -->
 
-<!-- body -->
-<div class=page__body>
-  <app-home-component></app-home-component>
-  <app-portfolio-component></app-portfolio-component>
-  <app-contact-component></app-contact-component>
-</div>
-<!-- /.body -->
+    <!-- page body -->
+    <div class="page-body">
+      <!-- page body contents -->
+      <router-outlet></router-outlet>
+      <!-- /.page body contents -->
 
-<!--Footer-->
-<footer class="page__footer">
+      <!-- social container -->
+      <div class="page-body__socialContainer">
+        <!-- linkedin  -->
+        <div class="circle circle--outercircle">
+            <div class="circle circle--innercircle">
+                <a class="btn-floating btn-small btn-li waves-light" href="https://www.linkedin.com/in/michael-beaseley-817b5a101" mdbRippleRadius>
+                  <i class="fa fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+        </div>
+        <!-- /.linkedin -->
 
-  <!--Social buttons-->
-  <div class="page__footer__socialButton">
-      <a class="btn-floating btn-small btn-tw waves-light" mdbRippleRadius><i class="fa fa-twitter-square fa-2x" aria-hidden="true"> </i></a>
-      <a class="btn-floating btn-small btn-gplus waves-light" mdbRippleRadius><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"> </i></a>
-      <a class="btn-floating btn-small btn-li waves-light" mdbRippleRadius><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"> </i></a>
-      <a class="btn-floating btn-small btn-git waves-light" mdbRippleRadius><i class="fa fa-github-square fa-2x" aria-hidden="true"> </i></a>
-  </div>
-  <!--/.Social buttons-->
+        <!-- twitter -->
+        <div class="circle circle--outercircle">
+            <div class="circle circle--innercircle">
+                <a class="btn-floating btn-small btn-tw waves-light" href="https://twitter.com/MTBeaseley" mdbRippleRadius>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"> </i>
+                </a>
+            </div>
+        </div>
+        <!-- /.twitter -->
 
-  <hr>
+        <!-- github -->
+        <div class="circle circle--outercircle">
+            <div class="circle circle--innercircle">
+                <a class="btn-floating btn-small btn-git waves-light" href="https://github.com/mbeaseley" mdbRippleRadius>
+                    <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- /. google plus -->
 
-  <!--Copyright-->
-  <div class="page__footer__copyright">
-      <div class="container-fluid">
-          © 2018 Copyright: Michael Beaseley 
+        <!-- google plus -->
+        <div class="circle circle--outercircle">
+            <div class="circle circle--innercircle">
+                <a class="btn-floating btn-small btn-gplus waves-light"href="https://plus.google.com/117738588364741731293" mdbRippleRadius>
+                    <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- /.google plus -->
       </div>
-  </div>
-  <!--/.Copyright-->
+      <!-- /.social container -->
+    </div>
 
-</footer>
-<!--/.Footer-->
+    <!-- footer container -->
+    <footer class="page__footer">
+      <div class="page__footer__copyright">
+          © 2018 Copyright: Michael Beaseley
+      </div>
+    </footer>
+    <!-- /.footer container -->
+
+</div>
