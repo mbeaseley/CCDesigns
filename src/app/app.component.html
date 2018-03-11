@@ -12,20 +12,20 @@
           <div class="navbar-collapse collapse" id="collapsingNavbar3">
               <ul class="navbar-nav mx-auto w-100">
                   <li class="nav-item">
-                      <a class="nav-link" routerLink="/home"
-                          [routerLinkActive]="['']"
-                          [ngClass]="rla.isActive?'active':''"
-                          #rla="routerLinkActive">Home</a>
+                    <a class="nav-link" routerLink="/home"
+                        [routerLinkActive]="['']"
+                        [ngClass]="rla.isActive?'active':''"
+                        #rla="routerLinkActive">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link"
-                          routerLink="/portfolio"
-                          routerLinkActive="active">Portfolio</a>
+                    <a class="nav-link"
+                        routerLink="/portfolio"
+                        routerLinkActive="active">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link"
-                          routerLink="/contact"
-                          routerLinkActive="active">Contact</a>
+                    <a class="nav-link"
+                        routerLink="/contact"
+                        routerLinkActive="active">Contact</a>
                   </li>
               </ul>
           </div>
@@ -34,7 +34,7 @@
     <!-- /.header -->
 
     <div class="page-body">
-      <!-- left contrainer -->
+      <!-- left container -->
       <div class="page-body__left">
         <!-- body -->
         <div class="page-body__left--body">
@@ -43,14 +43,18 @@
         <!-- /.body -->
       </div>
 
-      <!-- right contrainer -->
+      <!-- right container -->
       <div class="page-body__right">
+        <!-- body -->
         <div class="page-body__right--body">
-
+          <router-outlet></router-outlet>
         </div>
+        <!-- /.body -->
       </div>
 
-      <div id="socialContrainer" class="page-body__socialContainer">
+      <!-- social container -->
+      <div class="page-body__socialContainer">
+        <!-- linkedin  -->
         <div class="circle circle--outercircle">
             <div class="circle circle--innercircle">
                 <a class="btn-floating btn-small btn-li waves-light" href="https://www.linkedin.com/in/michael-beaseley-817b5a101" mdbRippleRadius>
@@ -58,6 +62,9 @@
                 </a>
             </div>
         </div>
+        <!-- /.linkedin -->
+
+        <!-- twitter -->
         <div class="circle circle--outercircle">
             <div class="circle circle--innercircle">
                 <a class="btn-floating btn-small btn-tw waves-light" href="https://twitter.com/MTBeaseley" mdbRippleRadius>
@@ -65,6 +72,9 @@
                 </a>
             </div>
         </div>
+        <!-- /.twitter -->
+
+        <!-- github -->
         <div class="circle circle--outercircle">
             <div class="circle circle--innercircle">
                 <a class="btn-floating btn-small btn-git waves-light" href="https://github.com/mbeaseley" mdbRippleRadius>
@@ -72,6 +82,9 @@
                 </a>
             </div>
         </div>
+        <!-- /. google plus -->
+
+        <!-- google plus -->
         <div class="circle circle--outercircle">
             <div class="circle circle--innercircle">
                 <a class="btn-floating btn-small btn-gplus waves-light"href="https://plus.google.com/117738588364741731293" mdbRippleRadius>
@@ -79,13 +92,17 @@
                 </a>
             </div>
         </div>
+        <!-- /.google plus -->
       </div>
+      <!-- /.social container -->
     </div>
 
+    <!-- footer container -->
     <footer class="page__footer">
       <div class="page__footer__copyright">
           © 2018 Copyright: Michael Beaseley
       </div>
     </footer>
+    <!-- /.footer container -->
 
 </div>
