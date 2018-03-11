@@ -1,7 +1,51 @@
 .portfolio-component {
     text-align: center;
 
-    &__contrainer {
-        margin-bottom: 1rem;        
+    &__container {
+      margin-bottom: 1rem;
+
+      &--subheading {
+        text-align: left;
+        padding: 10px 0 0 20px;
+      }
+
+      &--explodes {
+        .profiles {
+          list-style:none;
+        }
+        .profiles > li {
+            float:left;
+        }
+        .info, .pic {
+            /* Make the picture and info go "on top" of each other */
+            position:absolute;
+            width: 100px;
+        }
+        .info {
+            /* Hide the info by default */
+            opacity:0;
+            background-color: blue;
+            width: inherit;
+            height: inherit;
+        }
+        /* By default, the info is smaller */
+        #explode .info {
+          transition: all 0.7s;
+          transform: scale(0.8);
+        }
+        #explode .pic {
+          transition: all 0.7s;
+        }
+        /* On hover, fade in and show original size */
+        #explode li:hover .info {
+          opacity:1;
+          transform: scale(1);
+        }
+        /* On hover, fade out and grow */
+        #explode li:hover .pic {
+          opacity:0;
+          transform: scale(1.4);
+        }
+      }
     }
 }
