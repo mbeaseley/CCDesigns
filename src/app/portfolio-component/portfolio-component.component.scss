@@ -1,51 +1,94 @@
-.portfolio-component {
-    text-align: center;
+.page-body {
+  &__portfolio {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
 
-    &__container {
-      margin-bottom: 1rem;
+    &--left {
+      padding: 60px 0 10px 0;
+      flex: 1 1 50vw;
+      order: 1;
+      min-width: 387px;
 
-      &--subheading {
-        text-align: left;
-        padding: 10px 0 0 20px;
-      }
+      .portfolio-component {
+        text-align: center;
 
-      &--explodes {
-        .profiles {
-          list-style:none;
-        }
-        .profiles > li {
-            float:left;
-        }
-        .info, .pic {
-            /* Make the picture and info go "on top" of each other */
-            position:absolute;
-            width: 100px;
-        }
-        .info {
-            /* Hide the info by default */
-            opacity:0;
-            background-color: blue;
-            width: inherit;
-            height: inherit;
-        }
-        /* By default, the info is smaller */
-        #explode .info {
-          transition: all 0.7s;
-          transform: scale(0.8);
-        }
-        #explode .pic {
-          transition: all 0.7s;
-        }
-        /* On hover, fade in and show original size */
-        #explode li:hover .info {
-          opacity:1;
-          transform: scale(1);
-        }
-        /* On hover, fade out and grow */
-        #explode li:hover .pic {
-          opacity:0;
-          transform: scale(1.4);
+        &__container {
+          margin-bottom: 1rem;
+
+          &--subheading {
+            text-align: left;
+            padding: 10px 0 0 20px;
+          }
+
+          &--explodes {
+            .profiles {
+              list-style:none;
+            }
+            .profiles > li {
+                float:left;
+            }
+            .info, .pic {
+                /* Make the picture and info go "on top" of each other */
+                position:absolute;
+                width: 100px;
+            }
+            .info {
+                /* Hide the info by default */
+                opacity:0;
+                background-color: blue;
+                width: inherit;
+                height: inherit;
+            }
+            /* By default, the info is smaller */
+            #explode .info {
+              transition: all 0.7s;
+              transform: scale(0.8);
+            }
+            #explode .pic {
+              transition: all 0.7s;
+            }
+            /* On hover, fade in and show original size */
+            #explode li:hover .info {
+              opacity:1;
+              transform: scale(1);
+            }
+            /* On hover, fade out and grow */
+            #explode li:hover .pic {
+              opacity:0;
+              transform: scale(1.4);
+            }
+          }
         }
       }
     }
+    &--right {
+      background-color: #b4b4b4;
+      height:97vh;
+      flex: 2 2 50vw;
+      order: 2;
+      background:url('http://via.placeholder.com/350x150') repeat center top;
+      min-width: 387px;
+    }
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      top: 56px;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+
+      &--left {
+          order: 2;
+          padding: 50px 0 10px 0;
+      }
+      &--right {
+          order: 1;
+          min-height: 35vh;
+          max-height: 35vh;
+      }
+    }
+  }
 }

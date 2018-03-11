@@ -47,28 +47,6 @@
     }
 
     .page-body {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        width: 100vw;
-        height: auto;
-
-        &__left {
-            padding: 60px 0 10px 0;
-            flex: 1 1 50vw;
-            order: 1;
-            min-width: 387px;
-        }
-
-        &__right {
-            background-color: #b4b4b4;
-            height:97vh;
-            flex: 2 2 50vw;
-            order: 2;
-            background:url('http://via.placeholder.com/350x150') repeat center top;
-            min-width: 387px;
-        }
 
         &__socialContainer {
             position: fixed;
@@ -113,24 +91,7 @@
                     margin-right: 20px;
                 }
             }
-        }
-
-        @media screen and (max-width: 768px) {
-            position: relative;
-            top: 56px;
-            -webkit-flex-direction: column;
-            flex-direction: column;
-
-            &__left {
-                order: 2;
-                padding: 50px 0 10px 0;
-            }
-            &__right {
-                order: 1;
-                min-height: 35vh;
-                max-height: 35vh;
-            }
-        }
+          }
     }
 
     &__footer {
