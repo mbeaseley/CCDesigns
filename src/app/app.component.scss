@@ -1,110 +1,116 @@
 .page {
     //page sections below
     &--header {
-        position: fixed;
-        width: 100vw;
+      position: fixed;
+      width: 100vw;
+      z-index: 1;
+
+      .navbar {
+          position: relative;
+          padding:  0.5rem 1rem 0.75rem;
+          margin-left: 80px;
+          cursor: pointer;
+
+          @media (max-width:992px) {
+              margin-left: 0;
+          }
+
+          .nav-link {
+              color: #b4b4b4;
+
+          }
+
+          .active {
+              color: rgba(128, 227, 255, 1);
+          }
+
+          .nav-link:hover {
+              color: white;
+          }
+      }
+
+      @media screen and (max-width: 768px) {
+        position: absolute;
         z-index: 1;
+        background-color: black;
+        text-align: center;
 
-        .navbar {
-            position: relative;
-            padding:  0.5rem 1rem 0.75rem;
-            margin-left: 80px;
-            cursor: pointer;
-
-            @media (max-width:992px) {
-                margin-left: 0;
-            }
-
-            .nav-link {
-                color: #b4b4b4;
-
-            }
-
-            .active {
-                color: rgba(128, 227, 255, 1);
-            }
-
-            .nav-link:hover {
-                color: white;
-            }
+        img {
+          position: absolute;
         }
 
-        @media screen and (max-width: 768px) {
-            position: absolute;
-            z-index: 1;
-            background-color: black;
-            text-align: center;
-
-            img {
-              position: absolute;
-            }
-
-            .nav-link {
-              position: relative;
-              left: 8px;
-            }
+        .nav-link {
+          position: relative;
+          left: 8px;
         }
+      }
     }
 
     .page-body {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      width: 100vw;
+      height: auto;
 
-        &__socialContainer {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            height: 100vh;
+      &__socialContainer {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 387px;
+
+        .circle {
+          width: 75px;
+          height: 75px;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          margin-bottom: 30px;
+          position: relative;
+
+          &--outercircle {
+              background-color: rgba(55, 210, 253, 0.8);
+          }
+
+          &--innercircle {
+            margin: 15%;
+            height: 70%;
+            width: 70%;
+            background-color: rgba(128, 227, 255, 1);
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-width: 387px;
-
-            .circle {
-                width: 75px;
-                height: 75px;
-                border-radius: 50%;
-                -moz-border-radius: 50%;
-                -webkit-border-radius: 50%;
-                margin-bottom: 30px;
-                position: relative;
-
-                &--outercircle {
-                    background-color: rgba(55, 210, 253, 0.8);
-                }
-
-                &--innercircle {
-                    margin: 15%;
-                    height: 70%;
-                    width: 70%;
-                    background-color: rgba(128, 227, 255, 1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-
-            @media screen and (max-width: 768px) {
-                flex-direction: row;
-                top: -65px;
-
-                .circle {
-                    margin-right: 20px;
-                }
-            }
           }
+        }
+
+        @media screen and (max-width: 768px) {
+          flex-direction: row;
+          top: -65px;
+
+          .circle {
+              margin-right: 20px;
+          }
+        }
+      }
     }
 
     &__footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background-color: rgb(37, 37, 37);
-        padding: 0.5rem 0 0.5rem 0;
-        min-width: 387px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(37, 37, 37);
+      padding: 0.5rem 0 0.5rem 0;
+      min-width: 387px;
 
-        &__copyright {
-            text-align: center;
-            color: #b4b4b4;
-        }
+      &__copyright {
+          text-align: center;
+          color: #b4b4b4;
+      }
     }
 }

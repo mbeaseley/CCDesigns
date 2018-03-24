@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { AppComponent } from './app.component';
 
@@ -25,7 +26,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    SlideshowModule,
   ],
   providers: [
     {provide: LocationStrategy, useClass: HashLocationStrategy}
