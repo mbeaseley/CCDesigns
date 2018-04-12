@@ -18,6 +18,10 @@
 
         &__contrainer {
             margin-bottom: 1rem;
+
+            form {
+              z-index: 5;
+            }
         }
       }
     }
