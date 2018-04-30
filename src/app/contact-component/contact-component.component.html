@@ -7,6 +7,12 @@
     </div>
   </div>
   <div class="page-body__contact--right">
-
+    <slideshow
+      [imageUrls]="imageUrls"
+      [showArrows]="false"
+      [lazyLoad]="imageSources?.length > 1"
+      [autoPlay]="true"
+      [autoPlayInterval]="5000">
+    </slideshow>
   </div>
 </div>
