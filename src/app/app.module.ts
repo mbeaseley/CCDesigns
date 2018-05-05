@@ -5,10 +5,10 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { AppComponent } from './app.component';
 
-import { HomeComponent } from './home-component/home-component.component';
-import { AboutMeComponent } from './aboutMe-component/aboutMe-component.component';
-import { PortfolioComponent } from './portfolio-component/portfolio-component.component';
-import { ContactComponent } from './contact-component/contact-component.component';
+import { HomeComponent } from './home-component/home.component';
+import { AboutMeComponent } from './aboutMe-component/aboutMe.component';
+import { PortfolioComponent } from './portfolio-component/portfolio.component';
+import { ContactComponent } from './contact-component/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },

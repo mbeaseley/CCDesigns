@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-aboutMe-component',
-  templateUrl: './aboutMe-component.component.html',
-  styleUrls: ['./aboutMe-component.component.scss']
+  templateUrl: './aboutMe.component.html',
+  styleUrls: ['./aboutMe.component.scss']
 })
 export class AboutMeComponent implements OnInit {
   imageUrls = [
