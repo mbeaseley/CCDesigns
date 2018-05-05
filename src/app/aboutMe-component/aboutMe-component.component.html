@@ -1,0 +1,18 @@
+<div class="page-body__contact">
+    <div class="page-body__contact--left">
+      <div class="aboutMe-component">
+        <div class="aboutMe-component__contrainer">
+  
+        </div>
+      </div>
+    </div>
+    <div class="page-body__contact--right">
+      <slideshow
+        [imageUrls]="imageUrls"
+        [showArrows]="false"
+        [lazyLoad]="imageUrls?.length > 1"
+        [autoPlay]="true"
+        [autoPlayInterval]="5000">
+      </slideshow>
+    </div>
+  </div>
