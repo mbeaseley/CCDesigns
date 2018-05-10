@@ -14,12 +14,6 @@
           <div class="home-component__container--body">
             <p>Ambitious, passionate and keen to learn, I always strive for success in whatever I do. I enjoy working both as part of a team, or individually using my own initiative. I always put 100% into all the activities I undertake, and am devoted when presented with demanding situations.</p>
             <hr>
-            <p>experience</p>
-            <hr>
-            <p>education</p>
-            <hr>
-            <p>hobbies & interests</p>
-            <hr>
           </div>
         </div>
       </div>
@@ -28,7 +22,7 @@
     <slideshow
       [imageUrls]="imageUrls"
       [showArrows]="false"
-      [lazyLoad]="imageSources?.length > 1"
+      [lazyLoad]="imageUrls?.length > 1"
       [autoPlay]="true"
       [autoPlayInterval]="5000">
     </slideshow>

@@ -12,13 +12,20 @@
           <div class="navbar-collapse collapse" id="collapsingNavbar3">
               <ul class="navbar-nav mx-auto w-100">
                   <li class="nav-item">
-                    <a class="nav-link" routerLink="home">Home</a>
+                    <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLink="aboutMe" routerLinkActive="active" data-toggle="dropdown">About Me</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" routerLink="aboutMe">Experience</a>
+                        <a class="dropdown-item" routerLink="aboutMe">Education</a>
+                      </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" routerLink="portfolio">Portfolio</a>
+                    <a class="nav-link" routerLink="portfolio" routerLinkActive="active">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" routerLink="contact">Contact</a>
+                    <a class="nav-link" routerLink="contact" routerLinkActive="active">Contact</a>
                   </li>
               </ul>
           </div>
