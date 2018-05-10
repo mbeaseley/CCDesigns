@@ -14,8 +14,12 @@
                   <li class="nav-item">
                     <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" routerLink="aboutMe" routerLinkActive="active">About Me</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLink="aboutMe" routerLinkActive="active" data-toggle="dropdown">About Me</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" routerLink="aboutMe">Experience</a>
+                        <a class="dropdown-item" routerLink="aboutMe">Education</a>
+                      </div>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" routerLink="portfolio" routerLinkActive="active">Portfolio</a>
