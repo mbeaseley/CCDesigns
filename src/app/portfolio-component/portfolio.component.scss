@@ -1,0 +1,54 @@
+.page-body {
+  &__portfolio {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+
+    &--left {
+      padding: 60px 0 10px 0;
+      flex: 1 1 50vw;
+      order: 1;
+      min-width: 387px;
+
+      .portfolio-component {
+        text-align: center;
+
+        &__container {
+          margin-bottom: 1rem;
+
+          &--subheading {
+            text-align: left;
+            padding: 10px 0 0 20px;
+          }
+        }
+      }
+    }
+    &--right {
+      background-color: #b4b4b4;
+      height:97vh;
+      flex: 2 2 50vw;
+      order: 2;
+      min-width: 387px;
+    }
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      top: 70px;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+
+      &--left {
+          order: 2;
+          padding: 50px 0 10px 0;
+      }
+      &--right {
+          order: 1;
+          min-height: 35vh;
+          max-height: 35vh;
+      }
+    }
+  }
+}

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio-component',
-  templateUrl: './portfolio-component.component.html',
-  styleUrls: ['./portfolio-component.component.scss']
+  selector: 'app-aboutMe-component',
+  templateUrl: './aboutMe.component.html',
+  styleUrls: ['./aboutMe.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class AboutMeComponent implements OnInit {
   imageUrls = [
     { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56748793/dbohn_170625_1801_0018.0.0.jpg' },
     { url: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/9278671/jbareham_170917_2000_0124.jpg' },
