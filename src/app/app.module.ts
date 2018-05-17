@@ -25,12 +25,6 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-<<<<<<< HEAD
-=======
-    SlideshowModule,
-    FormsModule,
-    ReactiveFormsModule
->>>>>>> c19441d9413d478d21f5aca07630d7bd6c177e2e
   ],
   providers: [],
   bootstrap: [AppComponent]
