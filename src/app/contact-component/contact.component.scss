@@ -19,8 +19,13 @@
         &__contrainer {
             margin-bottom: 1rem;
 
-            form {
-              z-index: 5;
+            hr {
+              border-top: 1px solid #b4b4b4;
+              margin-right: 10px;
+            }
+
+            p {
+              margin: 0;
             }
         }
       }
