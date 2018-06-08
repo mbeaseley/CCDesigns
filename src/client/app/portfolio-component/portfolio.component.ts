@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { SlideshowModule } from 'ng-simple-slideshow';
+
 
 @Component({
-  selector: 'app-home-component',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-portfolio-component',
+  templateUrl: './portfolio.component.html',
+  styleUrls: ['./portfolio.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class PortfolioComponent implements OnInit {
   imageUrls = [
     { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56748793/dbohn_170625_1801_0018.0.0.jpg' },
     { url: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/9278671/jbareham_170917_2000_0124.jpg' },

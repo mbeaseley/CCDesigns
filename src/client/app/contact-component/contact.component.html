@@ -1,0 +1,19 @@
+<div class="page-body__contact">
+  <div class="page-body__contact--left">
+    <div class="contact-component">
+      <div class="contact-component__contrainer">
+        <p class="contact-component__container--subheading">Applications Coming Soon</p>
+          <!-- TODO -->
+      </div>
+    </div>
+  </div>
+  <div class="page-body__contact--right">
+    <slideshow
+      [imageUrls]="imageUrls"
+      [showArrows]="false"
+      [lazyLoad]="imageUrls?.length > 1"
+      [autoPlay]="true"
+      [autoPlayInterval]="5000">
+    </slideshow>
+  </div>
+</div>
