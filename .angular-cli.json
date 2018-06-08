@@ -5,10 +5,18 @@
   },
   "apps": [
     {
-      "root": "src",
-      "outDir": "dist",
+      "root": "src/client",
+      "outDir": "dist/publicweb",
       "assets": [
-        "assets"
+        "assets",
+        "favicon.ico",
+        "favicon.png",
+        {
+          "glob": "**/*.*",
+          "input": "../server/",
+          "output": "../",
+          "allowOutsideOutDir": true
+        }
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -21,7 +29,7 @@
         "styles.scss"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js"
+        "../../node_modules/jquery/dist/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -37,11 +45,11 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json",
+      "project": "src/client/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },
     {
-      "project": "src/tsconfig.spec.json",
+      "project": "src/client/tsconfig.spec.json",
       "exclude": "**/node_modules/**"
     },
     {
