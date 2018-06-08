@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SlideshowModule } from 'ng-simple-slideshow';
+
 
 @Component({
   selector: 'app-home-component',
