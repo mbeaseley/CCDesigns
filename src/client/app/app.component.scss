@@ -36,7 +36,7 @@
       text-align: center;
 
       img {
-        position: absolute;
+        // position: absolute;
       }
 
       .nav-link {
@@ -96,7 +96,7 @@
         .circle {
           margin-bottom: 0;
         }
-        
+
         .circle:not(:last-child) {
             margin-right: 20px;
         }
