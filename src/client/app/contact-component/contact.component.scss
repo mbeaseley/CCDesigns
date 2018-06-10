@@ -5,7 +5,7 @@
     -webkit-flex-direction: row;
     flex-direction: row;
     width: 100vw;
-    height: auto;
+    height: 97vh;
 
     &--left {
       padding: 60px 0 10px 0;
@@ -16,8 +16,13 @@
       .contact-component {
         text-align: center;
 
-        &__contrainer {
+        &__container {
             margin-bottom: 1rem;
+
+            &--subheading {
+              text-align: left;
+              padding: 10px 0 0 20px;
+            }
 
             hr {
               border-top: 1px solid #b4b4b4;
@@ -42,6 +47,7 @@
       top: 70px;
       -webkit-flex-direction: column;
       flex-direction: column;
+      height: 94vh;
 
       &--left {
           order: 2;

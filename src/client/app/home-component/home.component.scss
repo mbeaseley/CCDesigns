@@ -5,7 +5,7 @@
     -webkit-flex-direction: row;
     flex-direction: row;
     width: 100vw;
-    height: auto;
+    height: 97vh;
 
     &--left {
       padding: 60px 0 10px 0;
@@ -86,6 +86,7 @@
       top: 70px;
       -webkit-flex-direction: column;
       flex-direction: column;
+      height: 94vh;
 
       &--left {
           order: 2;

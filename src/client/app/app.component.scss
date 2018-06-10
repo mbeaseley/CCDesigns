@@ -36,7 +36,7 @@
       text-align: center;
 
       img {
-        position: absolute;
+        // position: absolute;
       }
 
       .nav-link {
@@ -91,8 +91,12 @@
 
       @media screen and (max-width: 768px) {
         flex-direction: row;
-        top: 44%;
+        top: 43%;
         
+        .circle {
+          margin-bottom: 0;
+        }
+
         .circle:not(:last-child) {
             margin-right: 20px;
         }
@@ -102,7 +106,7 @@
   }
 
   &__footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
