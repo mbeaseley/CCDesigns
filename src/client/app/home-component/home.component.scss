@@ -8,11 +8,16 @@
     height: 97vh;
 
     &--left {
-      padding: 60px 0 10px 0;
+      padding: 0 0 10px 0;
+      margin-top: 60px;
       flex: 1 1 50vw;
       order: 1;
       min-width: 387px;
       overflow-x: scroll;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 0;
+      }
 
       .home-component {
         text-align: center;
