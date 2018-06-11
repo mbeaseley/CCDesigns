@@ -15,13 +15,20 @@
 
       .contact-component {
         text-align: center;
+        margin-left: 100px;
+        margin-right: 40px;
+
+        @media (max-width:992px) {
+            margin-left: 20px;
+        }
+
 
         &__container {
             margin-bottom: 1rem;
 
             &--subheading {
               text-align: left;
-              padding: 10px 0 0 20px;
+              padding: 10px 0 0 0;
             }
 
             hr {
