@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { SlideshowModule } from 'ng-simple-slideshow';
+import { HoverBoxComponent } from '../components/hover-box-component/hover-box.component'
 
 
 @Component({
@@ -8,6 +9,8 @@ import { SlideshowModule } from 'ng-simple-slideshow';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
+  @ViewChild(HoverBoxComponent) hoverBox: HoverBoxComponent; 
+
   imageUrls = [
     { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56748793/dbohn_170625_1801_0018.0.0.jpg' },
     { url: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/9278671/jbareham_170917_2000_0124.jpg' },
