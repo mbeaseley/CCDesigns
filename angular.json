@@ -23,7 +23,7 @@
               {
                 "glob": "**/*.*",
                 "input": "../server/",
-                "output": "./assets/"
+                "output": "./assets"
               }
             ],
             "styles": [
