@@ -8,7 +8,6 @@ import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home-component/home.component";
 import { PortfolioComponent } from "./portfolio-component/portfolio.component";
 import { ContactComponent } from "./contact-component/contact.component";
-import { HoverBoxComponent } from "./components/hover-box-component/hover-box.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -23,7 +22,6 @@ const routes: Routes = [
     HomeComponent,
     PortfolioComponent,
     ContactComponent,
-    HoverBoxComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule],
   providers: [],

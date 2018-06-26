@@ -1,7 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SlideshowModule } from 'ng-simple-slideshow';
-import { HoverBoxComponent } from '../components/hover-box-component/hover-box.component'
-
 
 @Component({
   selector: 'app-portfolio-component',
@@ -9,13 +7,12 @@ import { HoverBoxComponent } from '../components/hover-box-component/hover-box.c
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  @ViewChild(HoverBoxComponent) hoverBox: HoverBoxComponent; 
 
   imageUrls = [
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56748793/dbohn_170625_1801_0018.0.0.jpg' },
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/9278671/jbareham_170917_2000_0124.jpg' },
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56789263/akrales_170919_1976_0104.0.jpg' },
-    { url: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/56674755/mr_pb_is_the_best.0.jpg' },
+    {url: 'https://images.ctfassets.net/43i5e5k8e66i/3CNwk7GcU8eEyQUcg4EsOg/16882f10db8b23fbea629b4ed733b946/Profle_pic_Carousel.jpg'},
+    {url: 'https://images.ctfassets.net/43i5e5k8e66i/3JfTj0C6VOcom8684eu6A8/17441f5aab777055e63b1ce9c20339b3/d940d393-ac86-4516-9f6c-52bf33b05852.jpeg'},
+    {url: 'https://images.ctfassets.net/43i5e5k8e66i/2tbgM7o5Wk6208QeuQM6o0/fa5ad3300b5da1235436ae75ac195386/profile_pic.jpg'},
+    // {url: 'https://images.ctfassets.net/43i5e5k8e66i/7h6kNOcPLieaUEGEW8yMUC/dec88aed72612947131d3229d1e5561a/9b608ed0-ff38-4efa-a9e4-e1eafb0f47f1.jpeg'}
   ];
 
   ngOnInit() {}
