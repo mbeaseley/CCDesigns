@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/spec",
     "baseUrl": "./",
@@ -9,7 +9,7 @@
       "jasmine",
       "node"
     ]
-  },
+  },ng s
   "files": [
     "test.ts",
     "polyfills.ts"

@@ -40,7 +40,7 @@
     "mdbootstrap": "^4.5.5",
     "moment": "^2.22.1",
     "ng-simple-slideshow": "^1.2.2",
-    "npm": "^6.1.0",
+    "npm": "^6.2.0",
     "popper.js": "^1.14.3",
     "rxjs": "^6.2.1",
     "zone.js": "^0.8.26"
