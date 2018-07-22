@@ -9,6 +9,8 @@ import { HomeComponent } from "./home-component/home.component";
 import { PortfolioComponent } from "./portfolio-component/portfolio.component";
 import { ContactComponent } from "./contact-component/contact.component";
 
+const APP_ID = 'ccdesigns';
+
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
@@ -21,9 +23,15 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     PortfolioComponent,
-    ContactComponent,
+    ContactComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule],
+  imports: [
+    BrowserModule.withServerTransition({
+      appId: APP_ID
+    }),
+    RouterModule.forRoot(routes),
+    SlideshowModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
