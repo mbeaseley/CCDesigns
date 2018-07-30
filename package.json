@@ -4,9 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "prestart": "ng build --prod && ngc",
-    "start": "node ./bin/www",
+    "start": "ng serve",
     "build": "ng build",
+    "build-prod": "ng build --prod",
+    "server": "ng run ccdesigns:server",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -40,7 +41,6 @@
     "http-errors": "^1.6.3",
     "jquery": "^3.3.1",
     "mdbootstrap": "^4.5.7",
-    "moment": "^2.22.1",
     "morgan": "^1.9.0",
     "ng-simple-slideshow": "^1.2.3",
     "npm": "^6.2.0",
