@@ -35,13 +35,13 @@ export class ContactComponent implements OnInit {
   get f() { return this.contactForm.controls; }
 
   onSubmit() {
-      this.submitted = true;
+    this.submitted = true;
 
-      // stop here if form is invalid
-      if (this.contactForm.invalid) {
-          return;
-      }
+    // stop here if form is invalid
+    if (this.contactForm.invalid) {
+        return;
+    }
 
-      alert('SUCCESS!! :-)')
+    alert('SUCCESS!!');
   }
 }
