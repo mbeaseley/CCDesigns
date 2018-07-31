@@ -2,17 +2,48 @@
   <div class="page-body__contact--left">
     <div class="contact-component">
       <div class="contact-component__container">
-        <p class="contact-component__container--subheading">Contact form Coming Soon</p>
-          <!-- TODO -->
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" placeholder="Name" formControlName="name" class="form-control bg-dark text-white" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+              <div *ngIf="f.name.errors.required">First Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Email" formControlName="email" class="form-control bg-dark text-white" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+            />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+              <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" formControlName="subject" class="form-control bg-dark text-white" [ngClass]="{ 'is-invalid': submitted && f.subject.errors }"
+            />
+            <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+              <div *ngIf="f.subject.errors.required">Subject is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Message" formControlName="message" class="form-control bg-dark text-white" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"
+            />
+            <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+              <div *ngIf="f.message.errors.required">Message is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button [disabled]="loading" class="btn btn-dark btn-block">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
   <div class="page-body__contact--right">
-    <slideshow
-      [imageUrls]="imageUrls"
-      [showArrows]="false"
-      [lazyLoad]="imageUrls?.length > 1"
-      [autoPlay]="true"
+    <slideshow 
+      [imageUrls]="imageUrls" 
+      [showArrows]="false" 
+      [lazyLoad]="imageUrls?.length > 1" 
+      [autoPlay]="true" 
       [autoPlayInterval]="5000">
     </slideshow>
   </div>
